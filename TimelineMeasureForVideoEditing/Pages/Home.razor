@@ -1,0 +1,47 @@
+﻿@page "/"
+@page "/index.html"
+
+<PageTitle>Timeline Measure for Video Editing</PageTitle>
+<HeadContent>
+    <meta name="description" content="Get the total duration between two timeline timecodes" />
+    <meta name="keywords" content="video editing, utility" />
+    <meta name="robots" content="index, follow" />
+</HeadContent>
+
+<FluentHeader Style="background-color: azure;color:black;border-bottom:3px solid black;">
+    Timeline Measure for Video Editing
+</FluentHeader>
+
+<main>
+    <EditForm Model=@TimecodeVM OnValidSubmit=@HandleValidSubmit>
+        <DataAnnotationsValidator />
+        <FluentValidationSummary />
+
+        <FluentStack Orientation="Orientation.Vertical">
+            <div>
+                <FluentTextField Name="startTimecode" @bind-Value=@TimecodeVM.StartTimecode Placeholder="00:00:00" Pattern="^\d{1,2}:\d{1,2}:\d{1,2}$" Label="Start Timecode (##:##:##)" Required />
+                <FluentValidationMessage For=@(() => TimecodeVM.StartTimecode) />
+            </div>
+            <div>
+                <FluentTextField Name="endTimecode" @bind-Value=@TimecodeVM.EndTimecode Placeholder="00:00:00" Pattern="^\d{1,2}:\d{1,2}:\d{1,2}$" Label="End Timecode (##:##:##)" Required />
+                <FluentValidationMessage For=@(() => TimecodeVM.EndTimecode) />
+            </div>
+            <FluentButton Type="ButtonType.Submit" Appearance="Appearance.Accent">Submit</FluentButton>
+            <div>
+                <FluentLabel Typo="Typography.Body" Style="font-weight:bold;">Timecode Duration:</FluentLabel>
+                <span>@TimecodeDuration</span>
+            </div>
+        </FluentStack>
+    </EditForm>
+</main>
+
+@code {
+    private TimecodeViewModel TimecodeVM { get; set; } = new();
+    private string TimecodeDuration = string.Empty;
+
+    private void HandleValidSubmit()
+    {
+        TimecodeDuration = TimecodeRuler.Measure(TimecodeVM.StartTimecode, TimecodeVM.EndTimecode);
+        StateHasChanged();
+    }
+}
