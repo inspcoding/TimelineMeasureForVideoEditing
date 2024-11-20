@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "TimelineMeasureForVideoEditing",
   "resources": {
-    "hash": "sha256-k2vRKH02uU4v1Ay8L2lCeGb2iRxY4KmSXKcGMH/oo5k=",
+    "hash": "sha256-CnRrLS83CBnpj/JduSnvx+4Kbpsz7fKX5eKDtai6BnM=",
     "fingerprinting": {
       "Microsoft.AspNetCore.Components.Forms.716cbq41wt.wasm": "Microsoft.AspNetCore.Components.Forms.wasm",
       "Microsoft.AspNetCore.Components.76jz0juwpu.wasm": "Microsoft.AspNetCore.Components.wasm",
@@ -60,9 +60,9 @@
       "System.Threading.08b4gdlk70.wasm": "System.Threading.wasm",
       "System.Transactions.Local.n4vjpucdx9.wasm": "System.Transactions.Local.wasm",
       "System.6bp5k9v1ih.wasm": "System.wasm",
-      "TimelineMeasureForVideoEditing.jgivnt1051.wasm": "TimelineMeasureForVideoEditing.wasm",
+      "TimelineMeasureForVideoEditing.cb6izzxc2x.wasm": "TimelineMeasureForVideoEditing.wasm",
       "dotnet.native.3vbh0thta0.js": "dotnet.native.js",
-      "dotnet.native.hp7dqey374.wasm": "dotnet.native.wasm",
+      "dotnet.native.fg8ghywwfn.wasm": "dotnet.native.wasm",
       "dotnet.js": "dotnet.js",
       "dotnet.runtime.o8gq1i8bk6.js": "dotnet.runtime.js",
       "icudt_CJK.tjcz0u77k5.dat": "icudt_CJK.dat",
@@ -76,7 +76,7 @@
       "dotnet.runtime.o8gq1i8bk6.js": "sha256-uD1t4tsPtmIHsx30SC4OztehGGaHVDksFD38rL2e3P4="
     },
     "wasmNative": {
-      "dotnet.native.hp7dqey374.wasm": "sha256-RZr6fFbfyqhbHSqOjtnAENs4Nj8zUbFwnvIlZfHPvdY="
+      "dotnet.native.fg8ghywwfn.wasm": "sha256-zwfObZT3PGpcNWx4CqXDAR2yEpo3mcrl2/89yM6lW4A="
     },
     "icu": {
       "icudt_CJK.tjcz0u77k5.dat": "sha256-SZLtQnRc0JkwqHab0VUVP7T3uBPSeYzxzDnpxPpUnHk=",
@@ -141,7 +141,7 @@
       "System.Threading.08b4gdlk70.wasm": "sha256-0MX3l5AQezNOxEu/I5gEBqvqqomPe3TELXYRbC3DLn0=",
       "System.Transactions.Local.n4vjpucdx9.wasm": "sha256-qeqORnZ6PsG2OVqQ/Z1jAfc20zGVmBASMOruPfQdUwk=",
       "System.6bp5k9v1ih.wasm": "sha256-nmhUPBjB8ZbEN0U5j2acgnW4fkbSYlov7U3e30Lsp8A=",
-      "TimelineMeasureForVideoEditing.jgivnt1051.wasm": "sha256-zXVP6RAtsC/2cXlLhDSEwYVb+SWDAGpebaOZY6y4Hk4="
+      "TimelineMeasureForVideoEditing.cb6izzxc2x.wasm": "sha256-iJDrtRnlR8fyaEHeLE+xuuO7rjJjbqPt8tuRtKGq9Tg="
     },
     "assembly": {},
     "libraryInitializers": {
